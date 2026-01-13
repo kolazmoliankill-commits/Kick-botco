@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick Bot Analyzer PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container fade-in">
+    <h1 class="title">Kick Bot Analyzer <span>PRO</span></h1>
+
+    <div class="input-box">
+        <input id="channelInput" type="text" placeholder="Nombre o link del canal…">
+        <button onclick="analyze()">Analizar</button>
+    </div>
+
+    <div id="results" class="results hidden">
+        <h2 id="channelName"></h2>
+
+        <div class="stat">
+            <p>Viewers Totales</p>
+            <span id="totalViewers">0</span>
+        </div>
+
+        <div class="bar-box">
+            <p>Reales</p>
+            <div class="bar"><div id="realBar"></div></div>
+            <span id="realPercent">0%</span>
+        </div>
+
+        <div class="bar-box">
+            <p>Bots</p>
+            <div class="bar"><div id="botBar"></div></div>
+            <span id="botPercent">0%</span>
+        </div>
+
+        <p class="precision">Precisión del algoritmo: <b>Avanzada</b></p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
